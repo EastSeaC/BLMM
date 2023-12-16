@@ -1,0 +1,12 @@
+D:\Code2\BannerlordTest2\BLMMServer\obj\Debug\net6.0\BLMMServer.csproj.AssemblyReference.cache
+D:\Code2\BannerlordTest2\BLMMServer\obj\Debug\net6.0\BLMMServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\Code2\BannerlordTest2\BLMMServer\obj\Debug\net6.0\BLMMServer.AssemblyInfoInputs.cache
+D:\Code2\BannerlordTest2\BLMMServer\obj\Debug\net6.0\BLMMServer.AssemblyInfo.cs
+D:\Code2\BannerlordTest2\BLMMServer\obj\Debug\net6.0\BLMMServer.csproj.CoreCompileInputs.cache
+D:\Code2\BannerlordTest2\BLMMServer\bin\Debug\net6.0\BLMMServer.deps.json
+D:\Code2\BannerlordTest2\BLMMServer\bin\Debug\net6.0\BLMMServer.dll
+D:\Code2\BannerlordTest2\BLMMServer\bin\Debug\net6.0\BLMMServer.pdb
+D:\Code2\BannerlordTest2\BLMMServer\obj\Debug\net6.0\BLMMServer.dll
+D:\Code2\BannerlordTest2\BLMMServer\obj\Debug\net6.0\refint\BLMMServer.dll
+D:\Code2\BannerlordTest2\BLMMServer\obj\Debug\net6.0\BLMMServer.pdb
+D:\Code2\BannerlordTest2\BLMMServer\obj\Debug\net6.0\ref\BLMMServer.dll

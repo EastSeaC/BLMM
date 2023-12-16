@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <MB_SERVER_PATH>D:\\Programs\Steam\steamapps\common\Mount &amp; Blade II Dedicated Server</MB_SERVER_PATH>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="$(MB_SERVER_PATH)\bin\Win64_Shipping_Server\TaleWorlds.*.dll">
+      <HintPath>%(Identity)</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Config\" />
+  </ItemGroup>
+
+
+</Project>

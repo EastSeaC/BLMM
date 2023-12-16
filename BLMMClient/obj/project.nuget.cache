@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "uE6cCM3p9die87dja/ygn75bGG8ZGlR4zmtSzK8klWq3TH8zIxMYJVCqiv1Dut49Jd8ErKkznSCXkC8Vy9HBAw==",
+  "success": true,
+  "projectFilePath": "D:\\Code2\\BannerlordTest2\\BLMMClient\\BLMMClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\a8152\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\a8152\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
