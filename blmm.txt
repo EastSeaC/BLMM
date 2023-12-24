@@ -1,0 +1,33 @@
+ServerName CN_BLMM
+GameType BLMM
+WelcomeMessage 欢迎来到BLMM！   
+
+add_map_to_automated_battle_pool mp_skirmish_map_002f
+add_map_to_automated_battle_pool mp_skirmish_map_006
+add_map_to_automated_battle_pool mp_skirmish_map_007
+
+add_map_to_usable_maps mp_skirmish_map_002f BLMM
+add_map_to_usable_maps mp_skirmish_map_006 BLMM
+add_map_to_usable_maps mp_skirmish_map_007 BLMM
+
+AdminPassword 111
+AutoTeamBalanceThreshold 0
+MapTimeLimit 60
+WarmupTimeLimit 20
+RespawnPeriodTeam1 4
+RespawnPeriodTeam2 4
+
+CultureTeam1 empire
+CultureTeam2 vlandia
+SpectatorCamera 0
+GoldGainChangePercentageTeam1 0
+GoldGainChangePercentageTeam2 0
+FriendlyFireDamageMeleeFriendPercent 10
+FriendlyFireDamageMeleeSelfPercent 10
+FriendlyFireDamageRangedFriendPercent 10
+FriendlyFireDamageRangedSelfPercent 10
+set_automated_battle_count -1
+enable_automated_battle_switching
+enable_map_voting
+enable_culture_voting
+start_game_and_mission

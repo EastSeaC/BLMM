@@ -11,6 +11,7 @@ using TaleWorlds.MountAndBlade.Source.Missions;
 
 namespace BLMMServer.Modes.Skirmish
 {
+    [ViewCreatorModule]
     internal class BLMMSkirmish : MissionBasedMultiplayerGameMode
     {
         private const string GameName = "BLMM";

@@ -48,6 +48,8 @@ namespace BLMMServer.Modes.Skirmish
             NotificationsComponent.WarmupEnding();
         }
 
+ 
+
         //public override bool CheckForWarmupEnd() //修正了一个Native错误，现在服务器可以正确比较当前玩家数与 MinNumberOfPlayersForMatchStart
         //{
         //    int num = 0;

@@ -2,27 +2,30 @@
 using TaleWorlds.Core;
 using TaleWorlds.MountAndBlade;
 using TaleWorlds.MountAndBlade.Multiplayer;
+using TaleWorlds.MountAndBlade.Multiplayer.View.MissionViews;
 using TaleWorlds.MountAndBlade.Source.Missions;
+using TaleWorlds.MountAndBlade.View;
+using TaleWorlds.MountAndBlade.View.MissionViews;
 
-namespace BLMMClient.Modes.Skirmish
+namespace BLMMClient.Modes.Skirmish;
+
+[ViewCreatorModule]
+internal class BLMMSkirmish : MissionBasedMultiplayerGameMode
 {
-    internal class BLMMSkirmish : MissionBasedMultiplayerGameMode
+    private const string GameName = "BLMM";
+    public BLMMSkirmish() : base(GameName)
     {
-        private const string GameName = "BLMM";
-        public BLMMSkirmish() : base(GameName)
-        {
-        }
+    }
 
-        [MissionMethod]
-        public override void StartMultiplayerGame(string scene)
-        {
-            //BLMMWarmupComponent warmupComponent = new(() => (new SiegeSpawnFrameBehavior(), new BLMMSiegeSpawningBehavior()));
-            MissionState.OpenNew(GameName, new MissionInitializerRecord(scene), _ => new MissionBehavior[]
+    [MissionMethod]
+    public override void StartMultiplayerGame(string scene)
+    {
+        MissionState.OpenNew(GameName, new MissionInitializerRecord(scene),
+            _ => new MissionBehavior[]
             {
                 MissionLobbyComponent.CreateBehavior(),
                 new BLMMSiegeClient(),
                 new MultiplayerAchievementComponent(),
-                new MultiplayerWarmupComponent(),
                 new MultiplayerTimerComponent(),
                 new MultiplayerMissionAgentVisualSpawnComponent(),
                 new ConsoleMatchStartEndHandler(),
@@ -42,6 +45,7 @@ namespace BLMMClient.Modes.Skirmish
                 new VoiceChatHandler(),
                 new MultiplayerPreloadHelper()
             });
-        }
     }
+
+
 }

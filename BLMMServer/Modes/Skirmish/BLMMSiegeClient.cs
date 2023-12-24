@@ -20,7 +20,12 @@ namespace BLMMServer.Modes.Skirmish
             return _myRepresentative.Gold;
         }
 
+        public override void OnBehaviorInitialize()
+        {
+            base.OnBehaviorInitialize();
+            MissionNetworkComponent.OnMyClientSynchronized += OnMyClientSynchronized;
 
+        }
         private void OnMyClientSynchronized()
         {
             _myRepresentative = GameNetwork.MyPeer.GetComponent<BLMMSiegeMissionRepresentative>();
@@ -49,12 +54,7 @@ namespace BLMMServer.Modes.Skirmish
             }
         }
 
-        public override void OnBehaviorInitialize()
-        {
-            base.OnBehaviorInitialize();
-            MissionNetworkComponent.OnMyClientSynchronized += OnMyClientSynchronized;
 
-        }
 
         public override void AfterStart()
         {

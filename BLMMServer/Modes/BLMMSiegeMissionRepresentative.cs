@@ -12,6 +12,8 @@ namespace BLMMServer.Modes
         private GoldGainFlags _currentGoldGains;
         private int _killCountOnSpawn;
 
+        public bool HasSpawnedAgentVisuals { get; internal set; }
+
         public int GetGoldAmountForVisual()
         {
             if (Gold < 0)

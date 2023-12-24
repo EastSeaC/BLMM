@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BLMMServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d0f27063703c9c3e3f58ddccaf7c1b9060d07f6e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("BLMMServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BLMMServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

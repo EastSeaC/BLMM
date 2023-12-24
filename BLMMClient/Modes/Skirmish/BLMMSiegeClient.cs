@@ -18,20 +18,20 @@ namespace BLMMClient.Modes.Skirmish
         private BLMMSiegeMissionRepresentative _myRepresentative;
         public override int GetGoldAmount()
         {
-            return _myRepresentative.Gold;
+            return 0;
         }
 
 
-        //private void OnMyClientSynchronized()
-        //{
-        //    _myRepresentative = GameNetwork.MyPeer.GetComponent<BLMMSiegeMissionRepresentative>();
-        //}
+        private void OnMyClientSynchronized()
+        {
+            _myRepresentative = GameNetwork.MyPeer.GetComponent<BLMMSiegeMissionRepresentative>();
+        }
 
-        //public override void OnRemoveBehavior()
-        //{
-        //    MissionNetworkComponent.OnMyClientSynchronized -= OnMyClientSynchronized;
-        //    base.OnRemoveBehavior();
-        //}
+        public override void OnRemoveBehavior()
+        {
+            MissionNetworkComponent.OnMyClientSynchronized -= OnMyClientSynchronized;
+            base.OnRemoveBehavior();
+        }
 
         public override void OnGoldAmountChangedForRepresentative(MissionRepresentativeBase representative, int goldAmount)
         {
@@ -53,7 +53,7 @@ namespace BLMMClient.Modes.Skirmish
         public override void OnBehaviorInitialize()
         {
             base.OnBehaviorInitialize();
-            //MissionNetworkComponent.OnMyClientSynchronized += OnMyClientSynchronized;
+            MissionNetworkComponent.OnMyClientSynchronized += OnMyClientSynchronized;
 
         }
 

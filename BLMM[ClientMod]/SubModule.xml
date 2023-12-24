@@ -1,0 +1,23 @@
+<Module>
+  <Name value="BLMM"/>
+  <Id value="BLMM"/>
+  <Version value="v1.0.1.9"/>
+  <SingleplayerModule value="false"/>
+  <MultiplayerModule value="true"/>
+  <ModuleCategory value="Multiplayer" />
+  <Official value="false" />
+  <DependedModules>
+    <DependedModule Id="Native"  Optional="false" />
+    <DependedModule Id="Multiplayer" Optional="false"/>
+  </DependedModules>
+
+  <SubModules>
+    <SubModule>
+      <Name value="BLMMClient"/>
+      <DLLName value="BLMMClient.dll"/>
+      <SubModuleClassType value="BLMMClient.Submodule"/>
+
+    </SubModule>
+  </SubModules>
+</Module>
+
